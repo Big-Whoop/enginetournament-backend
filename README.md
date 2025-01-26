@@ -1,4 +1,8 @@
 # Engine Tournament Application
+## What is it?
+
+See: https://www.youtube.com/watch?v=E1UIfVw6jkE
+
 ## Introduction (Read me first)
 
 This software is a personal self learning project I was asked to share the code of. This software has no tests, 
