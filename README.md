@@ -13,10 +13,11 @@ to browser using Server Sent Events instead of polling. And geee, that is really
 ## How to run
 
 This is a Spring Boot Application written in Java using Maven as dependency management. Import it into a Java IDE of 
-your choice (I used IntelliJ) and then edit the resources/application.yml and define at least two UCI Chess engines
-including their exectable path on your machine. If you don't know what to download:
+your choice (I used IntelliJ) and then edit the [application.yml](src/main/resources/application.yml) and define at 
+least two UCI Chess engines including their exectable path on your machine. If you don't know what to download:
 
 Stockfish (Open Source, World Stronges Engine, uses CPU): https://stockfishchess.org/download/
+
 LC0 (Open Source AI Chess Engine by Google, uses GPU): https://github.com/LeelaChessZero/lc0
 
 Or just google one of the Engines in the application.yml - They are mostly Open Source or at least free to use.
