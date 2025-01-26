@@ -1,0 +1,62 @@
+app:
+  game:
+    engines:
+      alexandria71:
+        name: Alexandria 7.1
+        path: "C:/Users/Public/Apps/chess_engines/Alexandria-7.1-bmi2.exe"
+      berserk13:
+        name: Berserk 13
+        path: "C:/Users/Public/Apps/chess_engines/berserk-13-avx2.exe"
+      caissa121:
+        name: Caissa 1.21
+        path: "C:/Users/Public/Apps/chess_engines/caissa-1.21-x64-avx2-bmi2.exe"
+      clover802:
+        name: Clover 8.0.2
+        path: "C:/Users/Public/Apps/chess_engines/Clover.8.0.2-avx2.exe"
+      dragon1:
+        name: Dragon 1
+        path: "C:/Users/Public/Apps/chess_engines/dragon-64bit-avx2.exe"
+      integral5:
+        name: Integral 5
+        path: "C:/Users/Public/Apps/chess_engines/integral5_avx2_bmi2.exe"
+      lc0-312:
+        default-black: true
+        name: LC0 0.31.2
+        path: "C:/Users/Public/Apps/chess_engines/lc0-v0.31.2-windows-gpu-nvidia-cuda/lc0.exe"
+      lizard111:
+        name: Lizard 1.1.1
+        path: "C:/Users/Public/Apps/chess_engines/Lizard-11_1-win.exe"
+      obsidian14:
+        name: Obsidian 14
+        path: "C:/Users/Public/Apps/chess_engines/Obsidian140-avx2.exe"
+      plentychess-301:
+        name: PlentyChess 3.0.1
+        path: "C:/Users/Public/Apps/chess_engines/PlentyChess-3.0.1-bmi2.exe"
+      rubichess202408:
+        name: Rubi Chess 2024.8
+        path: "C:/Users/Public/Apps/chess_engines/RubiChess/RubiChess-20240817_x86-64-bmi2.exe"
+      seer280:
+        name: Seer 2.8.0
+        path: "C:/Users/Public/Apps/chess_engines/seer_v2.8_x64_avx2_popcnt.exe"
+      stockfish-11:
+        name: Stockfish 11
+        path: "C:/Users/Public/Apps/chess_engines/stockfish_20011801_x64_modern.exe"
+      stockfish-12:
+        name: Stockfish 12
+        path: "C:/Users/Public/Apps/chess_engines/stockfish_20090216_x64_avx2.exe"
+      stockfish-13:
+        name: Stockfish 13
+        path: "C:/Users/Public/Apps/chess_engines/stockfish_13_win_x64_bmi2.exe"
+      stockfish-14-1:
+        name: Stockfish 14.1
+        path: "C:/Users/Public/Apps/chess_engines/stockfish_14.1_win_x64_avx2.exe"
+      stockfish-15-1:
+        name: Stockfish 15.1
+        path: "C:/Users/Public/Apps/chess_engines/stockfish-15.1-avx2.exe"
+      stockfish-16-1:
+        name: Stockfish 16.1
+        path: "C:/Users/Public/Apps/chess_engines/stockfish-16.1.exe"
+      stockfish-17-pre:
+        default-white: true
+        name: Stockfish 17
+        path: "C:/Users/Public/Apps/chess_engines/stockfish-17.exe"

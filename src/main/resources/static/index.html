@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid-container">
+        <div id="header" class="header">Engine Tournament V 0.0.1-snapshot</div>
+        <div id="menu" class="menu">
+
+        </div>
+        <div id="board_canvas" class="board">
+        </div>
+        <div id="engine-white" class="engine engine-white"></div>
+        <div id="engine-black" class="engine engine-black"></div>
+        <div id="engineNameWhite"  class="engine-name engine-name-white">
+            -
+        </div>
+        <div id="engineNameBlack" class="engine-name engine-name-black">
+            -
+        </div>
+        <div id="engineEventCountWhite" class="engine-timer-white engine-timer"></div>
+        <div id="engineEventCountBlack" class="engine-timer-black engine-timer"></div>
+        <div id="moves" class="moves"></div>
+        <div class="tournament">
+            <form id="startGameForm" class="start-game-form">
+                <div>
+                    <label for="engine-dropdown-white">Engine White</label>
+                    <select name="engineWhite" id="engine-dropdown-white">
+                    </select>
+                </div>
+                <div>
+                    <label for="engine-dropdown-black">Engine Black</label>
+                    <select name="engineBlack" id="engine-dropdown-black">
+                    </select>
+                </div>
+                <div>
+                    <label for="clockSeconds">Time per played (s)</label>
+                    <input type="number" id="clockSeconds" name="clockSeconds" value="10"/>
+                </div>
+                <div>
+                    <label for="clockIncrementMillis">Time increment per move (ms)</label>
+                    <input type="number" id="clockIncrementMillis" name="clockIncrementMillis" value="1000"/>
+                </div>
+                <div>
+                    <label for="fen">Start Position (FEN)</label>
+                    <input type="text" id="fen" name="fen" value="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1" />
+                </div>
+                <div>
+                    <label for="multiPv">Display n trains of thought</label>
+                    <select name="multiPv" id="multiPv">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4" selected="selected">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="badMoveThreshold">Bad move Threshold (Centipawn loss)</label>
+                    <input type="number" id="badMoveThreshold" name="badMoveThreshold" value="50" min="10" max="1000"/>
+                </div>
+                <div>
+                    <button id="startGameButton">Play</button>
+                </div>
+            </form>
+        </div>
+        <div id="gameScore" class="game-score">
+            <canvas id="gameScoreChart"></canvas>
+        </div>
+    </div>
+
+    <script src="js/gui/index.js"></script>
+</body>
+</html>

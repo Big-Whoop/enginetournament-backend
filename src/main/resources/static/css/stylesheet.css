@@ -1,0 +1,136 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 6fr 10em 1fr 1fr 10em 1fr 1fr;
+  grid-template-rows: 2.7em 2.3em 1fr 3fr 1fr;
+  gap: 0.5em 0.5em;
+  grid-template-areas: "header engine-name-white engine-name-white engine-name-white engine-name-black engine-name-black engine-name-black" "menu engine-timer-white engine-timer-white engine-timer-white engine-timer-black engine-timer-black engine-timer-black" "board engine-white engine-white engine-white engine-black engine-black engine-black" "board moves tournament tournament tournament tournament tournament" "board game-score game-score game-score game-score game-score game-score";
+  width: calc(100vw - 1.5em);
+  height: calc(100vh - 1.5em);
+  margin: 0 auto;
+}
+.grid-container .header {
+  grid-area: header;
+}
+.grid-container .menu {
+  grid-area: menu;
+}
+.grid-container .board {
+  grid-area: board;
+  display: flex;
+}
+.grid-container .engine-white {
+  grid-area: engine-white;
+}
+.grid-container .engine-black {
+  grid-area: engine-black;
+}
+.grid-container .engine-name-white {
+  grid-area: engine-name-white;
+}
+.grid-container .engine-name-black {
+  grid-area: engine-name-black;
+}
+.grid-container .engine-timer-white {
+  grid-area: engine-timer-white;
+}
+.grid-container .engine-timer-black {
+  grid-area: engine-timer-black;
+}
+.grid-container .moves {
+  grid-area: moves;
+}
+.grid-container .tournament {
+  grid-area: tournament;
+}
+.grid-container .game-score {
+  grid-area: game-score;
+}
+.grid-container > div {
+  border: 0.12em solid #067eee;
+  background: white;
+  padding: 0.2em;
+}
+
+body {
+  background: #c0d5e0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 1.4em;
+  vertical-align: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+div.game-score {
+  background: #b9d4ff;
+}
+
+.engine-name {
+  font-weight: bold;
+  font-size: 1.4em;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+
+.thinking {
+  background: #b1d8fd !important;
+}
+
+.engine-timer {
+  font-weight: bold;
+  font-size: 1.2em;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+
+.moves {
+  overflow: auto;
+  font-family: "Cousine", monospace;
+  font-size: 0.8em;
+}
+
+.engine {
+  overflow: auto;
+  font-family: "Cousine", monospace;
+  font-size: 0.8em;
+}
+
+.start-game-form label {
+  vertical-align: top;
+  display: inline-block;
+  width: 12em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.start-game-form input, select, textarea {
+  width: 18em;
+  font-family: "Hind", sans-serif;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.start-game-form textarea {
+  resize: none;
+  height: 3em;
+}
+
+.start-game-form div:not(:last-child) {
+  margin-bottom: 0.2em;
+}
+
+.menu {
+  font-weight: bold;
+  font-size: 1.2em;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

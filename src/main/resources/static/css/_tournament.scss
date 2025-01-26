@@ -1,0 +1,23 @@
+.start-game-form label {
+  vertical-align: top;
+  display: inline-block;
+  width: 12em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.start-game-form input, select, textarea {
+  width: 18em;
+  font-family: 'Hind', sans-serif;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.start-game-form textarea {
+  resize: none;
+  height: 3em;
+}
+
+.start-game-form div:not(:last-child) {
+  margin-bottom: .2em;
+}
